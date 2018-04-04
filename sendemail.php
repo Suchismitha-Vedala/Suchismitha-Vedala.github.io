@@ -8,7 +8,7 @@
 
     $to         = 'svedala@uh.edu';  // put your email here
 
-    $email_template = 'simple.html';
+    //$email_template = 'simple.html';
 
     $subject    = strip_tags($_POST['subject']);
     $email       = strip_tags($_POST['email']);

@@ -313,6 +313,7 @@ jQuery(function ($) {
 
                 $this.before( '<div class="alert alert-success">'+data.message+'</div>' );
                 $this.find('input, textarea').val('');
+                
             }
 
         }, "json");
@@ -364,7 +365,7 @@ jQuery(function ($) {
                 scrollwheel: false,
                 center: myLatlng,
                 mapTypeId: google.maps.MapTypeId.ROADMAP,
-                disableDefaultUI: true,
+                disableDefaultUI: true
               
             }
             var map = new google.maps.Map(document.getElementById('mapCanvas'), mapOptions);
