@@ -31,10 +31,12 @@ body,html {
     width :50%;
     background-color: #C2BCBA;
 }
-.img{
+.fixed{
   position:fixed;
   height:100%;
+  width:100%;
   overflow:hidden;
+  background:url("/work/assets/images/left.png");
 }
 </style>
 
@@ -42,7 +44,10 @@ body,html {
 
   <div class="row">
    
-        <div class="col-sm-6" ><img src = "/work/assets/images/left.png" height = 100% width=100%>
+        <div class="col-sm-6" >
+          <!--<img src = "/work/assets/images/left.png" height = 100% width=100%>-->
+          <div class = "fixed"></div>
+
         </div>
         <div class="col-sm-6" style= "top:13%;">
           <br>
@@ -66,7 +71,7 @@ body,html {
    
     <div class = "footer">
            
-<ul class="social-icons icon-circle icon-zoom"> 
+         <ul class="social-icons icon-circle icon-zoom"> 
           <center>
             <a href="https://www.facebook.com/suchismitha.vedala" target="_blank" ><i class="fa fa-facebook"></i></a>
             <a href="https://www.linkedin.com/in/suchismitha-vedala"  target="_blank"><i class="fa fa-linkedin"></i></a>
