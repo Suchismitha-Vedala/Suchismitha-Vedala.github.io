@@ -59,12 +59,23 @@ body,html {
     font-family:""Montserrat", sans-serif";
     font-size: 14pt;
     text-align: justify!important;
-      text-overflow: auto;
-  overflow: auto;
+      text-overflow: scroll;
+      overflow-x: hidden;
+       overflow-y: scroll;
+
       position: fixed!important;
     z-index: 1;
+  }
    
+.leftimage{
+  background-image: url("/work/assets//images//index.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100%;
+  background-attachment : scroll;
 
+}
     
     
 
@@ -170,14 +181,7 @@ hr {
 
 }
 
-.righttext{
-   width: 40px;
-    height: 40px;
-line-height: 50px;
-  right:0%;
-  font-size: 3pt;
-  font-color:black;
-}
+
 </style>
 
     
