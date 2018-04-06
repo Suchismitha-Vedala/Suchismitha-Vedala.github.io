@@ -31,9 +31,19 @@ body,html {
     width :50%;
     background-color: #C2BCBA;
 }
-img{
-  height:auto;
-  vertical-align : middle;
+.parallax {
+    /* The image used */
+    background-image: url("/work/assets/images/left.png");
+
+    /* Set a specific height */
+    height:auto;
+    width:50%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 </style>
@@ -45,7 +55,7 @@ img{
         <div class="col-sm-6" >
           <!--<img src = "/work/assets/images/left.png" height = 100% width=100%>-->
           
-            <img src = "/work/assets/images/left.png" height = 100% width=100% >
+            <div class="parallax"></div>
          
 
         </div>
