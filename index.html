@@ -16,6 +16,7 @@
 body,html { 
     height: 100%;
     margin: 0;
+
     background: rgba(234,243,238,0.2);
     overflow: auto;
     font-family: 'Montserrat';
@@ -43,21 +44,39 @@ body,html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 @media only screen and (max-device-width: 1366px) {
     .parallax {
         background-attachment: scroll;
+        i
     }
 }
 .footer1{
   position: absolute;
   right: 0;
   bottom: 0;
-  left: 50%;
+  left: 0%;
   padding: 1rem;
-  background-color: #efefef;
+  width:100%;
+  background-color: #696969;
   text-align: center;
 }
+.footer-wrapper {
+    padding: 0;
+    color: gray;
+    left:50%;
+    right:0;
+    bottom:0;
+    background-color:#696969;
+    height:0.7;
+
+  
+}
+.copyright p {
+    margin: 0;
+}
+
 
 </style>
 
@@ -68,11 +87,11 @@ body,html {
         <div class="col-sm-6" >
           <!--<img src = "/work/assets/images/left.png" height = 100% width=100%>-->
           
-            <div class="parallax"><img src = "/work/assets/images/left.png" ></div>
+            <div class="parallax"><img src = "work/assets/images/left.png" width=200% overflow=hidden;></div>
          
 
         </div>
-        <div class="col-sm-6" style= "top:13%;">
+        <div class="col-sm-6" style= "top:13%; left:2px;right:3px">
           <br>
           <center><h1><strong>
                 <font size = 20px, color ="#E14F3F"><b>
@@ -89,10 +108,23 @@ body,html {
              </font> 
               </p>
             
+        
+
+
+  <footer class="footer1">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6" >
+            <div class="copyright text-center">
+              <p><font color = "white">Copyright © Suchismitha Vedala</p></font>
+            </div>
+          </div>
         </div>
+      </div>
+    </footer>
+</div>
     
-    <div class="footer1">
-    	<p>Copyright &copy; Suchismitha Vedala</p>
+  
     	<!--<ul class="social-icons icon-circle icon-zoom"> 
           <center>
             <a href="https://www.facebook.com/suchismitha.vedala" target="_blank" ><i class="fa fa-facebook"></i></a>
@@ -102,7 +134,7 @@ body,html {
             <a href="https://www.instagram.com/suchi_vedala/"  target="_blank"><i class="fa fa-instagram"></i></a>
             </center></ul>
     	-->
-    </div>	
+    
    
     <!--<div class = "footer">
            
