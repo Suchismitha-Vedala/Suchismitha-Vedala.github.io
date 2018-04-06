@@ -25,58 +25,68 @@ body,html {
   text-align: justify!important;
   text-align:center;
 }
-.fa {
-  padding: 20px;
-  font-size: 15px;
+.social {
+  position: relative;
+  text-align: center;
+  transform: translateY(-50%);
+}
+
+.social .link {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
   width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 70%;
-  bottom:30px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px dashed white;
+  background-clip: content-box;
+  transition: .5s;
+  color: #D7D0BE;
+  font-size: 25px;
 }
 
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-
-.fa-github {
- font-size:10px;
- background: black;
- color:white;
-}
-
-
-.footer2 {
+.social .link span {
+  display: block;
   position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 50%;
-  width:50%;
-  padding: 0rem;
-  background-color: #696969;
   text-align: center;
-
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
+.social .link:hover {
+  padding: 10px;
+  color: white;
+  margin-left: -5px;
+  transform: translateX(10px) rotate(360deg);
+}
+
+.social .link.google-plus {
+  background-color: tomato;
+  color: white;
+}
+
+.social .link.linkedin {
+  background-color: #00ACEE;
+  color: white;
+}
+
+.social .link.facebook {
+  background-color: #3B5998;
+  color: white;
+}
+.social .link.github {
+  background-color: black;
+  color: white;
+}
+.social .link.instagram {
+  background-color: brown;
+  color: white;
+}
+
+
+
+
 
 .footer {
     position: fixed;
@@ -111,28 +121,7 @@ body,html {
         
     }
 }
-.footer1{
-  position: sticky;
-  right: 0;
-  bottom: 0px;
-  left: 50%;
-  padding:0;
-  width:100%;
-  height: 2%;
-  background-color: #696969;
-  text-align: center;
-}
-.footer-wrapper {
-    padding: 0;
-    color: gray;
-    left:50%;
-    right:0;
-    bottom:0;
-    background-color:#696969;
-    height:0.5;
 
-  
-}
 .copyright p {
     margin: 0;
 }
@@ -151,7 +140,7 @@ p.a{
         <div class="col-sm-7" >
           <!--<img src = "/work/assets/images/left.png" height = 100% width=100%>-->
           
-            <div class="parallax"><img src = "/work/assets/images/left.png" width=200% overflow=hidden;></div>
+            <div class="parallax"><img src = "/work/assets/images/left.png" width=200% overflow=aut;></div>
          
 
         </div>
@@ -176,12 +165,14 @@ p.a{
 
            
           <center> <p class= "a"><font size = 4pt><b>Follow me</b></font></p> <br>
-             <a href="https://www.facebook.com/suchismitha.vedala" target="_blank"  class="fa fa-facebook"></i></a>  
-             <a href="https://www.linkedin.com/in/suchismitha-vedala"  target="_blank" class="fa fa-linkedin"></i></a>  
-             <a href="https://www.facebook.com/suchismitha.vedala"  target="_blank" class="fa fa-google"></i></a>   
-            <a href="https://www.instagram.com/suchi_vedala/"  target="_blank" class="fa fa-instagram"></i></a>
-            <a href="https://github.com/Suchismitha-Vedala" target="_blank"  class="fa fa-github"></a>
+          	<div class="social">
+              <a href="https://www.facebook.com/suchismitha.vedala" class="link facebook" target="_blank"><span class="fa fa-facebook-square"></span></a>
+  <a href="https://www.linkedin.com/in/suchismitha-vedala" class=" link linkedin" target="_blank"><span class="fa fa-linkedin"></span></a>
+  <a href="https://www.facebook.com/suchismitha.vedala" class="link google-plus" target="_blank"><span class="fa fa-google-plus-square"></span></a>
+  <a href="https://github.com/Suchismitha-Vedala" class="link github" target="_blank"><span class="fa fa-github"></span></a>
+  <a href="https://www.instagram.com/suchi_vedala/" class="link instagram" target="_blank"><span class="fa fa-instagram"></span></a>
             </center>
+        </div>
 </div>
 
 
