@@ -14,8 +14,9 @@
 </head>
 <body>
 <style>
+
 body,html { 
-    height: 100%;
+  height: 100%;
     margin: 0;
     padding :0;
 
@@ -24,6 +25,99 @@ body,html {
     font-family: 'Montserrat';
   text-align: justify!important;
   text-align:center;
+ }
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  text-overflow: auto;
+  overflow: auto;
+  right: 0%;
+  width: 0;
+  height: 100%;
+  transition: .7s ease;
+}
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text {
+  font-size: 40px;
+  position: absolute;
+  background-color: white;
+  top: 20%;
+  left: 73%;
+  color :#222626;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+.left {
+  
+   padding: 0 20px 20px 0;
+   background-color: white ;
+   background-image:url('/work/assets/images/index.jpg') ;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   min-height: 100%;
+  
+}
+.right {
+    position: absolute;
+    top: 6%;
+    left:53%;
+    width: 44%;
+    right:3%;
+    padding: 0px;
+    text-align: justify!important;
+    max-width: 980px;
+    margin: auto;
+    margin-top: auto;
+    margin-right: 10px;
+    margin-bottom: auto;
+    margin-left: 10px;
+    
+    
+}
+
+.left-col-block {
+    width: 50%;
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+}
+.header {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    vertical-align: middle;
+    position: relative;
+}
+.header .profile-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: url('/work/assets/images/left.png');
+    background-size: cover;
+    background-position: center top;
 }
 .social {
   position: relative;
@@ -90,72 +184,41 @@ body,html {
   background-color: brown;
   color: white;
 }
-
-
-
-
-
 .footer {
     position: fixed;
     bottom: 0;
     height:0.5;
     text-align: center;
     text-orientation: center;
-    left:57%;
-    width:47%;
+    left:50%;
     padding: 0rem;
     line-height: 3px;
     background-color: #696969;
-}
-.parallax {
-    /* The image used */
-
-    /* Set a specific height */
-    height:auto;
-    width:50%;
-    left:0;
-    top:0;
-    bottom:0;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    float:left;
-
-}
-@media only screen and (max-device-width: 1366px) {
-    .parallax {
-        background-attachment: fixed;
-        
-    }
-}
-
-.copyright p {
-    margin: 0;
 }
 p.a{
                 font-family: "Trebuchet MS", Helvetica, sans-serif;
                 font-size: 15pt;
  }
 
-
+hr {
+    margin: auto;
+    width: 40%;
+}
 </style>
 
-<div class="container-fluid">
+<body>
+ 
+ <div class="left-col-block blocks">
+    <header class="header">
+        <div class="profile-img"></div>
+    </header>
+    <!-- .header-->
+</div>
 
-  <div class="row">
-   
-        <div class="col-sm-7" >
-          <!--<img src = "/work/assets/images/left.png" height = 100% width=100%>-->
-          
-            <div class="parallax"><img src = "/work/assets/images/index.jpg" width=200% height=auto; overflow=auto;></div>
-         
 
-        </div>
-        <div class="col-sm-5" style= "top:13%;"">
-          <br>
+
+      <br>
+  <div class="right">
           <center><h1><strong>
                 <font size = 20px, color ="#E14F3F"><b>
                   <br><br>Suchismitha Vedala</b></font></strong></h1></center>
@@ -163,7 +226,7 @@ p.a{
           <br><br>
           <p class = "a">
             <font size = 4.5pt>
-        <b>Hello!!</b><br><br>
+            <b>Hello!!</b><br><br>
               I am Suchismitha Vedala. An enthusiast by heart and an inquisitive by mind, I constantly seek to strive and        learn. Hailing from the city of destiny, Visakhapatnam in India, I aim to achieve my dreams and reach my         destiny. I am  passionate about Data Science and currently pursuing a Graduate Degree in Computer Science at       the  University of Houston.Experienced in Web Development and Data Analytics I focus on pursuing a career which progresses my interests. Energectic and full of life is what people say about me; for I, am just a little girl with big dreams and ideas set on the journey to learn and discover. <br>
               <br>
                 Want to  know more or work with me ??  <a href="/work"><b>Click here</b></a> <br>
@@ -173,94 +236,31 @@ p.a{
 
 
 
-           
-          <center> <p class= "a"><font size = 4pt><b>Follow me</b></font></p> <br><br>
-          	<br>
-          	<div class="social">
+           <center> <p class= "a"><font size = 4pt><b>Follow me</b></font></p> <br><br>
+            <br>
+            <div class="social">
               <a href="https://www.facebook.com/suchismitha.vedala" class="link facebook" target="_blank"><span class="fa fa-facebook-square"></span></a>
-  <a href="https://www.linkedin.com/in/suchismitha-vedala" class=" link linkedin" target="_blank"><span class="fa fa-linkedin"></span></a>
-  <a href="https://www.facebook.com/suchismitha.vedala" class="link google-plus" target="_blank"><span class="fa fa-google-plus-square"></span></a>
-  <a href="https://github.com/Suchismitha-Vedala" class="link github" target="_blank"><span class="fa fa-github"></span></a>
-  <a href="https://www.instagram.com/suchi_vedala/" class="link instagram" target="_blank"><span class="fa fa-instagram"></span></a>
-            </center>
-        </div>
-</div>
+              <a href="https://www.linkedin.com/in/suchismitha-vedala" class=" link linkedin" target="_blank"><span class="fa fa-linkedin"></span></a>
+              <a href="https://www.facebook.com/suchismitha.vedala" class="link google-plus" target="_blank"><span class="fa fa-google-plus-square"></span></a>
+               <a href="https://github.com/Suchismitha-Vedala" class="link github" target="_blank"><span class="fa fa-github"></span></a>
+               <a href="https://www.instagram.com/suchi_vedala/" class="link instagram" target="_blank"><span class="fa fa-instagram"></span></a>
 
-
-
-       
- 
-    </div>
-</div>
-     <div class = "footer">
-  	<br><br><p><font color = "white"><center>Copyright © Suchismitha Vedala</p></font></center>
-  </div>
-  
-        
-
-<!-- <footer class="footer1">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6" >
-            <div class="copyright text-center">
-              <br><br><p><font color = "white">Copyright © Suchismitha Vedala</p></font>
             </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-</div>
-    -->
-  
-    	<!--<ul class="social-icons icon-circle icon-zoom"> 
-          <center>
-            <a href="https://www.facebook.com/suchismitha.vedala" target="_blank" ><i class="fa fa-facebook"></i></a>
-            <a href="https://www.linkedin.com/in/suchismitha-vedala"  target="_blank"><i class="fa fa-linkedin"></i></a>
-            <a href="https://www.facebook.com/suchismitha.vedala"  target="_blank"><i class="fa fa-google-plus"></i></a>
-            <a href="https://github.com/Suchismitha-Vedala" target="_blank"><i class="fa fa-github"></i></a>
-            <a href="https://www.instagram.com/suchi_vedala/"  target="_blank"><i class="fa fa-instagram"></i></a>
-            </center></ul>
-    	-->
-    
-   
-    <!--<div class = "footer">
-           
-         <ul class="social-icons icon-circle icon-zoom"> 
-          <center>
-            <a href="https://www.facebook.com/suchismitha.vedala" target="_blank" ><i class="fa fa-facebook"></i></a>
-            <a href="https://www.linkedin.com/in/suchismitha-vedala"  target="_blank"><i class="fa fa-linkedin"></i></a>
-            <a href="https://www.facebook.com/suchismitha.vedala"  target="_blank"><i class="fa fa-google-plus"></i></a>
-            <a href="https://github.com/Suchismitha-Vedala" target="_blank"><i class="fa fa-github"></i></a>
-            <a href="https://www.instagram.com/suchi_vedala/"  target="_blank"><i class="fa fa-instagram"></i></a>
-            </center>
+          </center>
+        
+      
 
 
+    <div class = "footer">
+    <br><br><p><font color = "white">
+      <center>Copyright © Suchismitha Vedala</p>
+      </font></center>
+  </div>
+  </div>
 
-
-       
-       </ul>
-
-     </div>
-    --> 
  
 </body>
+
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
