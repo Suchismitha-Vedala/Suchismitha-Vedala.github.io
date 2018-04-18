@@ -3,17 +3,32 @@
 <head>
 <title>Suchismitha Vedala</title>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="/work/assets/images/ico/logo.jpg">
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 
 <style>
 * {
     box-sizing: border-box;
 }
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url('work/assets/images/preloader.gif') center no-repeat #fff;
+}
+
+
+
 
 body,html {
     height: 100%;
@@ -152,11 +167,16 @@ p.a{
 </style>
 </head>
 <body>
-<div id="tt-preloader">
-    <div id="pre-status">
-      <div class="preload-placeholder"></div>
-    </div>
-  </div>
+  <script type="text/javascript">
+  window.onload=function()
+  {
+
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");;
+  }
+</script>
+<div class="se-pre-con"></div>
+
 
 <div class="row">
     <div class = "columnleft">
@@ -197,7 +217,8 @@ p.a{
   <p><font color="white">Copyright &copy; Suchismitha Vedala </p></font>
    </div>
 </div>
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 
 </body>
 </html>
