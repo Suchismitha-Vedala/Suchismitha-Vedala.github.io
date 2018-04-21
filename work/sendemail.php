@@ -6,7 +6,7 @@
     header( 'Content-type: application/json' );
 
 
-    $to         = 'svedala@uh.edu';  // put your email here
+    $to         = 'v.suchismitha1994@gmail.com';  // put your email here
 
     //$email_template = 'simple.html';
 
@@ -16,6 +16,9 @@
     $name       = strip_tags($_POST['name']);
     $message    = nl2br( htmlspecialchars($_POST['message'], ENT_QUOTES) );
     $result     = array();
+
+    $formcontent ="From: $name \n Message: $message";
+    $mailheader = "From: $email \r\n";
 
 
     if(empty($name)){
@@ -55,7 +58,9 @@
         '{{phone}}'=>$phone
         );
 
-
+    mail($to, $subject, $formcontent, $mailheader) or die("Error!");
+    echo "Thank You!";
+    /*
     $templateContents = file_get_contents( dirname(__FILE__) . '/email-templates/'.$email_template);
 
     $contents =  strtr($templateContents, $templateTags);
@@ -68,4 +73,9 @@
 
     echo json_encode( $result );
 
-    die;
+    die;*/
+
+
+
+
+?>
