@@ -8,7 +8,7 @@
 
     $to         = 'v.suchismitha1994@gmail.com';  // put your email here
 
-    //$email_template = 'simple.html';
+    $email_template = 'simple.html';
 
     $subject    = strip_tags($_POST['subject']);
     $email       = strip_tags($_POST['email']);
@@ -54,9 +54,9 @@
         );
 
 
-    //$templateContents = file_get_contents( dirname(__FILE__) . '/email-templates/'.$email_template);
+    $templateContents = file_get_contents( dirname(__FILE__) . 'email-templates/'.$email_template);
 
-    //$contents =  strtr($templateContents, $templateTags);
+    $contents =  strtr($templateContents, $templateTags);
 
     if ( mail( $to, $subject, $contents, $headers ) ) {
         $result = array( 'response' => 'success', 'message'=>'<strong>Thank You!</strong>&nbsp; Your email has been delivered.' );
