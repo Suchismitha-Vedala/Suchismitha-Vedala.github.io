@@ -266,7 +266,7 @@ jQuery(function ($) {
     // Google Map
     // -------------------------------------------------------------
 
-    (function () {
+    (function initMap() {
         var myLatlng = new google.maps.LatLng(30.2672, 97.7431);
 
             var styles = [
