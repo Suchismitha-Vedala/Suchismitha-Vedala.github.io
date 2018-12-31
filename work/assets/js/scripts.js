@@ -328,7 +328,7 @@ jQuery(function ($) {
                 infowindow.open(map, marker);
             });
 
-    }());*/
+    }()); */
 
 
 });
